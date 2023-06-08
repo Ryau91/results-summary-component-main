@@ -36,33 +36,34 @@ main {
     align-items: center;
     text-align: center;
     border-radius: 0 0 40px 40px;
+    padding: 0 2.5rem;
 }
 
 .your-result {
     color: hsl(241, 100%, 89%);
     padding: 1.5rem;
     font-weight: 500;
-    font-size: 1.25rem;
 }
+
 .score {
     display: flex;
     background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
 }
 
 .score-top{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: white;
 }
 
 .score-bottom{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: hsl(241, 100%, 89%)
 }
@@ -71,15 +72,14 @@ main {
     color: white;
     padding: 0.5rem;
     font-weight: 700;
-    font-size: 1.5rem;
-    margin: 1vw;
+    font-size: 1.4rem;
+    margin: 0.5rem;
 }
 
 .statistic {
     color: hsl(241, 100%, 89%);
-    width: 80%;
-    font-size: 1rem;
     margin: 0;
+    font-size: 0.9rem;
 }
 
 /* overall-result ends */
@@ -91,23 +91,26 @@ main {
     flex-direction: column;
     flex-basis: 0;
     flex-grow: 5;
-    font-size: 1.5rem;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 }
 
-.summary, .category-name, .category-score, .slash-100, .continue{
-    font-size: 1.2rem;
+.category-name, .category-score, .slash-100, .continue{
     font-weight: 700;
 }
 .summary, .category-score {
     color: hsl(224, 30%, 27%);
-    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.category-name, .category-score, .slash-100{
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .summary{
     display: flex;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.3rem 0;
 }
 
 .categories-container{
@@ -154,7 +157,7 @@ main {
     align-items: center;
     align-self: center;
     width: 100%;
-    padding: 1rem;
+    padding: 0.9rem;
     background-color: hsl(224, 30%, 27%);
     color: white;
     border-radius: 50px;
@@ -164,8 +167,8 @@ main {
 
 @media (min-width: 480px) {
     main {
-        height: 500px;
-        width: 750px;
+        height: 440px;
+        width: 660px;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -176,17 +179,33 @@ main {
     .overall-result {
         border-radius: 40px;
         height: 100%;
-        padding: 0 4%;
+        padding: 0 1.5rem;
+    }
+
+    .your-result {
+        font-size: 1.1rem;
     }
 
     .score {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .score-top{
+        font-size: 3.5rem;
+    }
+
+    .statistic{
+        width: 13rem;
     }
 
     .breakdown {
         height: 100%;
         flex-grow: 4;
-        padding: 0 4%;
+        padding: 0 1.5rem;
+    }
+
+    .continue:hover{
+        background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     }
 }
